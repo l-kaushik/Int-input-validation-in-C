@@ -31,7 +31,3 @@ int intval()
         }
     }
 }
-void main()
-{
-    printf("%d", intval());
-}
