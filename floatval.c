@@ -1,17 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 float floatval()
 {
     char input[100];
-    int check;
     double result;
 
     while (1)
     {
-        check = scanf(" %[^\n]s", &input); 
-        if (check == 1)
+
+        if (fgets(input,sizeof(input),stdin) != NULL)
         {
+            input[strcspn(input, "\n")] = '\0';
             char *endptr;
 
             result = strtof(input, &endptr);

@@ -1,24 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 int intval()
 {
     char input[100];
-    int check;
     long result;
 
     while (1)
     {
-        check = scanf(" %[^\n]s", &input);
-        if (check == 1)
+        if (fgets(input, sizeof(input), stdin) != NULL)
         {
-            char *endptr;
+            input[strcspn(input, "\n")] = '\0'; //removing trailng spaces
+
+            char *endptr = NULL;
 
             result = strtol(input, &endptr, 10);
 
             if (*endptr != '\0')
             {
                 printf("Invalid input. Please try again.\n");
+                // printf("%d",result);
             }
             else
             {
