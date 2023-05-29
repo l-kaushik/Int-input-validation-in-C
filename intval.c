@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <string.h>
 
-int intval()
+long long intval()
 {
     char input[100];
-    long result;
+    long long result;
 
     while (1)
     {
@@ -20,11 +20,10 @@ int intval()
             if (*endptr != '\0')
             {
                 printf("Invalid input. Please try again.\n");
-                // printf("%d",result);
             }
             else
             {
-                printf("The number is %d", result); 
+                printf("The number is %lld", result); 
                 return result; 
             }
         }
@@ -37,7 +36,7 @@ int intval()
 
 int main()
 {
-    int num;
+    long long num;
     printf("Enter a number:- ");
     num = intval();
     return 0;
