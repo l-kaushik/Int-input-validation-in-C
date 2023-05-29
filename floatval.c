@@ -2,20 +2,19 @@
 #include <stdlib.h>
 #include <string.h>
 
-float floatval()
+double floatval()
 {
     char input[100];
     double result;
 
     while (1)
     {
-
-        if (fgets(input,sizeof(input),stdin) != NULL)
+        if (fgets(input, sizeof(input), stdin) != NULL)
         {
-            input[strcspn(input, "\n")] = '\0';
+            input[strcspn(input, "\n")] = '\0'; // removing the trailing spaces
             char *endptr;
 
-            result = strtof(input, &endptr);
+            result = strtold(input, &endptr);
 
             if (*endptr != '\0')
             {
@@ -23,8 +22,8 @@ float floatval()
             }
             else
             {
-                printf("The number is %f",result);
-                return result; 
+                printf("The number is %.15Lg", result);
+                return result;
             }
         }
         else
@@ -36,9 +35,9 @@ float floatval()
 
 int main()
 {
-    float num;
-    printf("Enter a float number:- ");
-    num = floatval();
+       double num;
+        printf("Enter a float number:- ");
+        num = floatval();
 
     return 0;
 }
