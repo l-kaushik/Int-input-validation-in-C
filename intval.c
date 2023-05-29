@@ -15,7 +15,7 @@ int intval()
 
             char *endptr = NULL;
 
-            result = strtol(input, &endptr, 10);
+            result = strtoll(input, &endptr, 10);
 
             if (*endptr != '\0')
             {

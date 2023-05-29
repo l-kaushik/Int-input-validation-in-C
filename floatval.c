@@ -14,7 +14,7 @@ double floatval()
             input[strcspn(input, "\n")] = '\0'; // removing the trailing spaces
             char *endptr;
 
-            result = strtold(input, &endptr);
+            result = strtod(input, &endptr);
 
             if (*endptr != '\0')
             {
