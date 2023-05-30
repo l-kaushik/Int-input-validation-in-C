@@ -1,9 +1,9 @@
 # Input-validation-in-C
-Getting numbers in input from user is a crucial task in C. As if user enter some alphabets then the program just crash.
+Getting numbers as input from user is a crucial task in C. As if user enter some alphabets then the program just crash.
 
 In this repository I've tried to deal with the problem.
 
-I am expecting you have some basic knowledge of number systems and knows about [functions](https://www.geeksforgeeks.org/c-functions/), [arguments](https://www.w3schools.com/c/c_functions_parameters.php), [string](https://www.w3schools.com/c/c_strings.php#:~:text=Unlike%20many%20other%20programming%20languages,double%20quotes%20(%20%22%22%20).) and little bit about [C streams](https://stackoverflow.com/questions/38652953/what-does-stream-mean-in-c#:~:text=of%20bytes%2C%20while-,Streams,-are%20just%20facilitators), etc.
+I am expecting you have some basic knowledge of [number systems](https://www.tutorialspoint.com/computer_fundamentals/computer_number_system.htm) and knows about [functions](https://www.geeksforgeeks.org/c-functions/), [arguments](https://www.w3schools.com/c/c_functions_parameters.php), [string](https://www.w3schools.com/c/c_strings.php#:~:text=Unlike%20many%20other%20programming%20languages,double%20quotes%20(%20%22%22%20).) and little bit about [C streams](https://stackoverflow.com/questions/38652953/what-does-stream-mean-in-c#:~:text=of%20bytes%2C%20while-,Streams,-are%20just%20facilitators), etc.
 
 # Description
 ## What causes the crashing of program?
